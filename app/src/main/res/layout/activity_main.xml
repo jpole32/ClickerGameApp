@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/bubbles">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/startMessage"
@@ -18,13 +19,16 @@
 
     <ImageButton
         android:id="@+id/pointButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="null"
         android:contentDescription="@string/rubberduck"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/points"
+        tools:srcCompat="@drawable/rubberduck" />
 
     <Button
         android:id="@+id/upgradeButton"
@@ -32,7 +36,7 @@
         android:layout_height="wrap_content"
         android:text="@string/click_for_upgrade_100_clicks"
         android:visibility="gone"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toTopOf="@+id/points"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

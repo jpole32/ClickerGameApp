@@ -3,4 +3,5 @@
     <string name="startMessage">Click Below To Start!</string>
     <string name="rubberduck">RubberDuck</string>
     <string name="click_for_upgrade_100_clicks">Click For Upgrade (100 Clicks)</string>
+    <string name="you_will_need">You will need %1$s</string>
 </resources>
