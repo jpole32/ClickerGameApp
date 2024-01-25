@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, perClick.toString(), Toast.LENGTH_SHORT).show()
             clicks += perClick
             score.text=clicks.toString()
-            if(clicks>=100){
+            if(clicks>=clicksNeeded){
                 upButton.visibility = View.VISIBLE
             }
         }

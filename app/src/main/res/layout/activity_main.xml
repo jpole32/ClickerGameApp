@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/startMessage"
-        android:textSize="20dp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/pointButton"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="null"
+
         android:padding="20dp"
         android:contentDescription="@string/rubberduck"
         android:scaleType="centerCrop"
